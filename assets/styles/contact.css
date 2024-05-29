@@ -1,0 +1,78 @@
+.contact-hero {
+  background-image: url(../images/contact/contact-hero.png);
+  min-height: 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__heading {
+  color: #ff7b29;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.1em; /* 110.294% */
+}
+
+.contact__desc {
+  margin-top: 6px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.33em; /* 133.333% */
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact__content {
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 135px;
+  gap: 30px;
+}
+
+.contact__content div {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.contact__form {
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ececec;
+  background: #fff;
+  padding: 20px;
+}
+
+.contact__form textarea {
+  height: 200px;
+}
+
+.contact__form input::placeholder {
+  font-size: 1.4rem;
+}
+
+.contact-submit {
+  margin-top: 10px;
+  min-width: 170px;
+  height: 58px;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,58 @@
+.desti-hero {
+  background-image: url(../images/destination/desti__hero.png);
+  min-height: 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desti__heading {
+  color: #ff7b29;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.1em; /* 110.294% */
+}
+
+.desti__desc {
+  margin-top: 6px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.33em; /* 133.333% */
+}
+
+.desti__list {
+  margin-top: 140px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.desti__thumb {
+  width: 270px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.desti__name {
+  color: #2d3134;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.33em; /* 133.333% */
+}
+
+.desti__see-more {
+  min-width: 160px;
+  height: 56px;
+  font-size: 1.8rem;
+}

@@ -1,0 +1,86 @@
+.navbar {
+  padding: 32px 0 18px;
+  background: transparent;
+}
+
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  width: 165px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link {
+  padding: 12px 17px;
+  color: #2d3134;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.14em;
+}
+
+.navbar__link.active {
+  position: relative;
+}
+
+.navbar__link.active::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+  left: 17px;
+  width: 17px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.navbar-contact__btn {
+  min-width: 131px;
+  height: 48px;
+  color: white;
+  background-color: #31c3e0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em; /* 114.286% */
+  letter-spacing: -0.01rem;
+}
+
+.navbar__sign-up {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1em; /* 114.286% */
+  letter-spacing: -0.01rem;
+  color: #0d1e3f;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__sign-up:hover {
+  text-decoration: underline;
+}
+
+.user-email {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.link-logout {
+  font-style: normal;
+  font-weight: 400;
+  color: #0d1e3f;
+}
+
+.link-logout:hover {
+  text-decoration: underline;
+  color: #31c3e0;
+}

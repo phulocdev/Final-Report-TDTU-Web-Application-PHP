@@ -1,0 +1,114 @@
+.about-hero {
+  min-height: 590px;
+  background-image: url(../images/about/hero_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__heading {
+  color: #ff7b29;
+  font-size: 10rem;
+  font-weight: 700;
+  line-height: 1.1em; /* 110.294% */
+}
+
+.operator {
+  padding: 120px 0;
+}
+
+.operator__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.operator__sub-desc {
+  color: #ff7b29;
+  font-family: Inter;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.33em; /* 133.333% */
+}
+
+.operator__heading {
+  margin-top: 10px;
+  color: #2d3134;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.12em; /* 112.903% */
+  margin-bottom: 20px;
+}
+
+.operator__wrapper-img {
+  width: 600px;
+  height: 482px;
+  border-radius: 24px;
+}
+
+.operator__img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour {
+  padding: 120px 0;
+}
+
+.tour__heading {
+  text-align: center;
+}
+
+.tour__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.tour__thumb {
+  width: 370px;
+  height: 306px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tour_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tour__name {
+  color: #2d3134;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5em; /* 150% */
+}
+
+.tour__socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tour__social i {
+  width: 18px;
+  height: 18px;
+  color: #676767;
+}
+
+.tour__desc {
+  margin-top: 4px;
+  color: #676a6c;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.42em; /* 142.857% */
+}

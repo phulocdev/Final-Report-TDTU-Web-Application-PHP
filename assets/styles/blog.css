@@ -1,0 +1,130 @@
+.blog-hero {
+  padding: 180px 0;
+  background: rgba(255, 123, 41, 0.3);
+}
+
+.blog__content {
+  padding: 120px 0;
+}
+
+.blog__heading {
+  color: #2d3134;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.12em; /* 112.903% */
+}
+
+.blog__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__single__thumb {
+  width: 626px;
+  height: 416px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.blog__search {
+  max-width: 488px;
+  border-radius: 10px;
+  background: #ececec;
+  padding: 30px 30px 44px;
+}
+
+.blog__search form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.blog__search__input {
+  flex: 1 0;
+  padding: 14px 20px;
+  border-radius: 8px;
+}
+
+.blog__single__heading {
+  max-width: 570px;
+}
+
+.blog__search__input::placeholder {
+  color: #676a6c;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.62em;
+}
+
+.blog__search-btn {
+  min-width: 100px;
+  height: 48px;
+  font-size: 1.6rem;
+}
+
+.blog__search-list {
+  margin-top: 30px;
+}
+
+.blog__search-item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.blog__search-item + .blog__search-item {
+  margin-top: 20px;
+}
+
+.blog__search-thumb {
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.blog__search-name {
+  color: #2d3134;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em; /* 150% */
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+
+.blog__thumb {
+  width: 370px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.blog__item-heading {
+  margin-top: 20px;
+  font-size: 2.4rem;
+}
+
+.blog__item-desc {
+  margin-top: 16px;
+  color: #676a6c;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.62em; /* 162.5% */
+  margin-bottom: 20px;
+}
+
+.blog__item-more {
+  color: #ff7b29;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5em; /* 150% */
+}
