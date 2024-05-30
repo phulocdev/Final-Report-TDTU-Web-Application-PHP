@@ -126,4 +126,20 @@ class Destination
         }
         return true;
     }
+
+    public static function get_destination_by_country($country)
+    {
+        $db = new Db();
+        $sql = "SELECT * FROM destination WHERE maQuocGia = '$country'";
+        $result = $db->select_to_array($sql);
+        return $result;
+    }
+
+    public static function get_destination_by_area($area)
+    {
+        $db = new Db();
+        $sql = "SELECT * FROM destination WHERE maKhuVuc = '$area'";
+        $result = $db->select_to_array($sql);
+        return $result;
+    }
 }

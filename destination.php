@@ -2,6 +2,25 @@
 <title>Desti</title>
 <link rel="stylesheet" href="./assets/styles/desti.css" />
 
+<?php
+require_once('./entities/destination.class.php');
+require_once('./entities/country.class.php');
+require_once('./entities/area.class.php');
+
+$destinationList = array_slice(Destination::list_destination(), 0, 12);
+$countryList = Country::list_country();
+$areaList = Area::list_area();
+
+if (isset($_GET['country'])) {
+  $country = $_GET['country'];
+  $destinationList = Destination::get_destination_by_country($country);
+}
+
+if (isset($_GET['area'])) {
+  $area = $_GET['area'];
+  $destinationList = Destination::get_destination_by_area($area);
+}
+?>
 
 <body>
   <div class="desti-hero">
@@ -12,47 +31,40 @@
   </div>
   <main>
     <div class="container">
-      <div class="desti__list">
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-        <div class="desti__item">
-          <img src="https://images.unsplash.com/photo-1716677951293-853a3948f633?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="desti__thumb" />
-          <h2 class="desti__name">Switzerland</h2>
-        </div>
-      </div>
+      <div class="tour_wrapper">
+        <!-- Filter bar -->
+        <asdie class="filter-bar">
+          <p class="subTitle">Danh mục quốc gia</p>
+          <ul>
+            <?php foreach ($countryList as $item) { ?>
+              <li>
+                <a href="./destination.php?country=<?php echo $item['maQuocGia'] ?>">
+                  <?php echo $item['tenQuocGia'] ?>
+                </a>
+              </li>
+            <?php } ?>
+          </ul>
 
-      <div style="text-align: center; margin-bottom: 160px">
-        <button class="btn desti__see-more">Xem thêm</button>
+          <p class="subTitle" style="margin-top: 30px;">Danh mục khu vực</p>
+          <ul>
+            <?php foreach ($areaList as $item) { ?>
+              <li>
+                <a href="./destination.php?area=<?php echo $item['maKhuVuc'] ?>">
+                  <?php echo $item['tenKhuVuc'] ?>
+                </a>
+              </li>
+            <?php } ?>
+          </ul>
+        </asdie>
+
+        <div class="desti__list">
+          <?php foreach ($destinationList as $item) { ?>
+            <div class="desti__item">
+              <img src="<?php echo $item['thumbnail'] ?>" alt="" class="desti__thumb" />
+              <h2 class="desti__name"><?php echo $item['tenDiaDiem'] ?></h2>
+            </div>
+          <?php } ?>
+        </div>
       </div>
     </div>
   </main>

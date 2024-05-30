@@ -32,10 +32,10 @@ $countryList = Destination::list_destination();
                         <a href="./admin_tours.php">Tours du lịch</a>
                     </li>
                     <li class="task-item">
-                        <a href="./admin.guider.php"">Hướng dẫn viên</a>
+                        <a href="./admin.guider.php">Hướng dẫn viên</a>
                     </li>
                     <li class=" task-item">
-                            <a href="./admin_blog.php">Bài viết quảng cáo</a>
+                        <a href="./admin_blog.php">Bài viết quảng cáo</a>
                     </li>
                     <li class="task-item">
                         <a href="./admin_user.php">Tài khoản người dùng</a>
@@ -61,10 +61,10 @@ $countryList = Destination::list_destination();
                             <tr>
                                 <td class="doc-id"><?php echo $item["maDiaDiem"] ?></td>
                                 <td class="doc-name"><?php echo $item["tenDiaDiem"] ?></td>
-                                <td class="doc-desc" style="border-bottom: none;">
+                                <td style="border-bottom: none;">
                                     <?php echo $item["maKhuVuc"] ?>
                                 </td>
-                                <td class="doc-desc" style="border-bottom: none;">
+                                <td style="border-bottom: none;">
                                     <?php echo $item["maQuocGia"] ?>
                                 </td>
                                 <td class="doc-major">
