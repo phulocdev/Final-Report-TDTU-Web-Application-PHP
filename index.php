@@ -1,6 +1,15 @@
 <?php include_once 'header.php'; ?>
 <link rel="stylesheet" href="./assets/styles/home.css" />
 
+<?php
+require_once('./entities/tour.class.php');
+$tourList = Tour::list_tour();
+$tourListPopular = array_slice($tourList, 0, 3);
+
+require_once('./entities/country.class.php');
+$countryList = Country::list_country();
+?>
+
 <!-- MAIN CONTENT -->
 <main class="main-content">
   <div class="container">
@@ -108,65 +117,36 @@
 
       <!-- BEST TOUR LIST -->
       <ul class="best-tour__list">
-        <article class="best-tour__item">
-          <div class="best-tour__wrapper-img">
-            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG91cnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="best-tour__thumb" />
-          </div>
-
-          <div class="best-tour__body">
-            <h3 class="best-tour__price">$150/day</h3>
-            <p class="best-tour__name">Cairns Travel</p>
-
-            <span class="best-tour__address">
-              <i style="margin-right: 8px" class="fa-solid fa-location-dot"></i>Calrns QLD, Australia</span>
-            <div class="best-tour__desc" style="display: flex; column-gap: 28px">
-              <span class="best-tour__date">
-                <i style="margin-right: 8px" class="fa-solid fa-calendar-days"></i>Oct 28, 2021</span>
-              <span class="best-tour__time"><i style="margin-right: 8px" class="fa-solid fa-clock"></i> 5
-                Days</span>
+        <?php
+        foreach ($tourListPopular as $item) {
+        ?>
+          <article class="best-tour__item">
+            <div class="best-tour__wrapper-img">
+              <img src="<?php echo $item['thumbnail'] ?>" alt="" class="best-tour__thumb" />
             </div>
-          </div>
-        </article>
 
-        <article class="best-tour__item">
-          <div class="best-tour__wrapper-img">
-            <img src="https://images.unsplash.com/photo-1465778893808-9b3d1b443be4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dG91cnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="best-tour__thumb" />
-          </div>
+            <div class="best-tour__body">
+              <h3 class="best-tour__price"><?php
+                                            $pricePerDay = round(($item['price'] / $item['soNgay']), 0, PHP_ROUND_HALF_UP);
+                                            $formatted_price = number_format($pricePerDay, 0, ',', '.');
+                                            echo $formatted_price
+                                            ?> / ngày
+              </h3>
+              <p class="best-tour__name"><?php echo $item['tourName'] ?></p>
 
-          <div class="best-tour__body">
-            <h3 class="best-tour__price">$110/day</h3>
-            <p class="best-tour__name">Orlando Travel</p>
-
-            <span class="best-tour__address">
-              <i style="margin-right: 8px" class="fa-solid fa-location-dot"></i>Orlando, FL, USA</span>
-            <div class="best-tour__desc" style="display: flex; column-gap: 28px">
-              <span class="best-tour__date">
-                <i style="margin-right: 8px" class="fa-solid fa-calendar-days"></i>Oct 28, 2021</span>
-              <span class="best-tour__time"><i style="margin-right: 8px" class="fa-solid fa-clock"></i> 5
-                Days</span>
+              <span class="best-tour__address">
+                <i style="margin-right: 8px" class="fa-solid fa-location-dot"></i><?php echo $item['videoDesc'] ?></span>
+              <div class="best-tour__desc" style="display: flex; column-gap: 28px">
+                <span class="best-tour__date">
+                  <i style="margin-right: 8px" class="fa-solid fa-calendar-days"></i><?php echo $item['ngayKhoiHanh'] ?></span>
+                <span class="best-tour__time"><i style="margin-right: 8px" class="fa-solid fa-clock"></i> <?php echo $item['soNgay'] ?>
+                  ngày</span>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <article class="best-tour__item">
-          <div class="best-tour__wrapper-img">
-            <img src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG91cnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="best-tour__thumb" />
-          </div>
-
-          <div class="best-tour__body">
-            <h3 class="best-tour__price">$150/day</h3>
-            <p class="best-tour__name">Cairns Travel</p>
-
-            <span class="best-tour__address">
-              <i style="margin-right: 8px" class="fa-solid fa-location-dot"></i>Calrns QLD, Australia</span>
-            <div class="best-tour__desc" style="display: flex; column-gap: 28px">
-              <span class="best-tour__date">
-                <i style="margin-right: 8px" class="fa-solid fa-calendar-days"></i>Oct 28, 2021</span>
-              <span class="best-tour__time"><i style="margin-right: 8px" class="fa-solid fa-clock"></i> 5
-                Days</span>
-            </div>
-          </div>
-        </article>
+          </article>
+        <?php
+        }
+        ?>
       </ul>
     </section>
 
@@ -247,71 +227,40 @@
       </div>
 
       <div class="trending-list">
-        <article class="trending-item">
-          <div class="trending__wrapper-thumb">
-            <img src="https://images.unsplash.com/photo-1617018681623-987895ca1c99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="" class="trending__thumb" />
-          </div>
-          <div class="trending__body">
-            <h3 class="trending__sub-title">Mountain Hiking Tour</h3>
-            <p class="trending__desc">12 Places | 3 Activites</p>
-
-            <div class="trending__book">
-              <p class="trending__price">$895.50</p>
-              <a href="#!" class="btn trending__book-action">Book Now</a>
+        <?php
+        foreach ($tourList as $item) {
+        ?>
+          <article class="trending-item">
+            <div class="trending__wrapper-thumb">
+              <img src=<?php echo $item['thumbnail'] ?> alt="" class="trending__thumb" />
             </div>
+            <div class="trending__body">
+              <h3 class="trending__sub-title"><?php echo $item['tourName'] ?></h3>
+              <p class="trending__desc"><?php echo $item['soDiemDen'] ?> Địa điểm | <?php echo $item['soCho'] ?> Hoạt động</p>
 
-            <div class="trending__last-row">
-              <div class="trending__wrapper-icon">
-                <img src="./assets/icon/trending-logo.png" alt="" class="trending__brand" />
+              <div class="trending__book">
+                <p class="trending__price"><?php
+                                            $price = $item['price'];
+                                            $formatted_price = number_format($price, 0, ',', '.');
+                                            echo $formatted_price;
+                                            ?> (VNĐ)</p>
+                <form style="margin-bottom: 0;" method="post" action="./book_tour.php">
+                  <input type="hidden" name="tour_id" value="<?php echo $item['tourID'] ?>">
+                  <button class="btn trending__book-action" style="cursor: pointer">Book Now</button>
+                </form>
               </div>
-              <span class="trending__brand-name desc">Safe Tour Agency</span>
-            </div>
-          </div>
-        </article>
 
-        <article class="trending-item">
-          <div class="trending__wrapper-thumb">
-            <img src="https://images.unsplash.com/photo-1617018681623-987895ca1c99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="" class="trending__thumb" />
-          </div>
-          <div class="trending__body">
-            <h3 class="trending__sub-title">Mountain Hiking Tour</h3>
-            <p class="trending__desc">12 Places | 3 Activites</p>
-
-            <div class="trending__book">
-              <p class="trending__price">$895.50</p>
-              <a href="#!" class="btn trending__book-action">Book Now</a>
-            </div>
-
-            <div class="trending__last-row">
-              <div class="trending__wrapper-icon">
-                <img src="./assets/icon/trending-logo.png" alt="" class="trending__brand" />
+              <div class="trending__last-row">
+                <div class="trending__wrapper-icon">
+                  <img src="./assets/icon/trending-logo.png" alt="" class="trending__brand" />
+                </div>
+                <span class="trending__brand-name desc">Safe Tour Agency</span>
               </div>
-              <span class="trending__brand-name desc">Safe Tour Agency</span>
             </div>
-          </div>
-        </article>
-
-        <article class="trending-item">
-          <div class="trending__wrapper-thumb">
-            <img src="https://images.unsplash.com/photo-1617018681623-987895ca1c99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="" class="trending__thumb" />
-          </div>
-          <div class="trending__body">
-            <h3 class="trending__sub-title">Mountain Hiking Tour</h3>
-            <p class="trending__desc">12 Places | 3 Activites</p>
-
-            <div class="trending__book">
-              <p class="trending__price">$895.50</p>
-              <a href="#!" class="btn trending__book-action">Book Now</a>
-            </div>
-
-            <div class="trending__last-row">
-              <div class="trending__wrapper-icon">
-                <img src="./assets/icon/trending-logo.png" alt="" class="trending__brand" />
-              </div>
-              <span class="trending__brand-name desc">Safe Tour Agency</span>
-            </div>
-          </div>
-        </article>
+          </article>
+        <?php
+        }
+        ?>
       </div>
     </section>
 
@@ -328,60 +277,16 @@
       </div>
 
       <ul class="country__list">
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
-        <a href="#!" class="country__link">
-          <li>
-            <span class="country__label"> 3.5 </span>
-            <div class="coutry__body">
-              <h3 class="country__name">Vientam</h3>
-              <p class="country__subDesc">Worefall</p>
-            </div>
-          </li>
-        </a>
+        <?php foreach (array_slice($countryList, 0, 6) as $item) { ?>
+          <a href="#!" class="country__link" style="background-image: url(<?php echo $item['thumbnail'] ?>);">
+            <li>
+              <span class="country__label"><?php echo $item['danhGia'] ?><i style="font-size: 1.1rem; margin-left: 2px;" class="fa-solid fa-star"></i></span>
+              <div class="coutry__body">
+                <h3 class="country__name"><?php echo $item['tenQuocGia'] ?></h3>
+              </div>
+            </li>
+          </a>
+        <?php } ?>
       </ul>
     </section>
 

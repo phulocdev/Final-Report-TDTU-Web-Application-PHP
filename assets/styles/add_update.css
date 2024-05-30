@@ -11,3 +11,13 @@ select {
   min-width: 100px !important;
   height: 55px !important;
 }
+
+.btn-confirm {
+  padding: 10px 6px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  min-width: 100px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
