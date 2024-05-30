@@ -109,6 +109,12 @@
 }
 
 .blog__item-heading {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
   margin-top: 20px;
   font-size: 2.4rem;
 }

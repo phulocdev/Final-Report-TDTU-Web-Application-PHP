@@ -32,10 +32,10 @@ $userList = User::list_user();
                         <a href="./admin_tours.php">Tours du lịch</a>
                     </li>
                     <li class="task-item">
-                        <a href="./admin.guider.php"">Hướng dẫn viên</a>
+                        <a href="./admin.guider.php">Hướng dẫn viên</a>
                     </li>
                     <li class=" task-item">
-                            <a href="./admin_blog.php">Bài viết quảng cáo</a>
+                        <a href="./admin_blog.php">Bài viết quảng cáo</a>
                     </li>
                     <li class="task-item">
                         <a href="./admin_user.php">Tài khoản người dùng</a>
@@ -63,7 +63,7 @@ $userList = User::list_user();
                                     </form>
                                 </td>
                                 <td>
-                                    <form style="margin-bottom: 0;" method="post" action="./delete_destination.php" onsubmit="return confirmDelete()">
+                                    <form style="margin-bottom: 0;" method="post" action="./delete_user.php" onsubmit="return confirmDelete()">
                                         <input type="hidden" name="document_id" value="<?php echo $item['email']; ?>">
                                         <button style="font-size: 13px;" type="submit" class="btn-delete">Xóa</button>
                                     </form>

@@ -412,7 +412,7 @@
 
 .trending-list::-webkit-scrollbar {
   width: 1em;
-  height: 10px;
+  height: 4px;
 }
 
 .trending-list::-webkit-scrollbar-track {
@@ -420,8 +420,8 @@
 }
 
 .trending-list::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  outline: 1px solid var(--primary-color);
+  background-color: #ffa733;
+  outline: 1px solid #ffa733;
 }
 
 .trending-item {

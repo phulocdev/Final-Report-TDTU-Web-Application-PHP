@@ -17,13 +17,13 @@ $countryList = Country::list_country();
     <section class="hero">
       <div class="hero__wrapper">
         <section class="hero__content">
-          <h1 class="hero__title">Let's Make Your Best Trip Ever</h1>
+          <h1 class="hero__title" style="text-transform: capitalize;">Du lịch thỏa thích cùng Safe tour</h1>
           <p class="hero__desc desc">
-            Plan and book your perfect trip with expert advice, travel tips,
-            destination information and inspiration from us.
+            Lập kế hoạch và đặt chuyến đi hoàn hảo của bạn với lời khuyên của chuyên gia, mẹo du lịch,
+            thông tin điểm đến và nguồn cảm hứng từ chúng tôi.
           </p>
           <div class="hero__actions">
-            <a href="#!" class="btn hero-discover__btn">Discover Now</a>
+            <a href="#!" class="btn hero-discover__btn">Khám phá ngay</a>
           </div>
         </section>
         <div class="hero__decoration">
@@ -34,12 +34,12 @@ $countryList = Country::list_country();
           <div class="hero_card">
             <div class="hero__card-icon">
               <p class="hero__card-number">39</p>
-              <p class="hero__card-desc">Times traveled</p>
+              <p class="hero__card-desc">Số lần du lịch</p>
             </div>
 
             <div class="hero__card-total">
               <p class="hero__card-count">224</p>
-              <p class="hero-card__desc-total">Total trip (month)</p>
+              <p class="hero-card__desc-total">Chuyến đi/tháng</p>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ $countryList = Country::list_country();
               </div>
               <div style="flex-grow: 1">
                 <p class="hero_stat-number">12</p>
-                <p class="hero_stat-desc">Years Experience</p>
+                <p class="hero_stat-desc">Năm kinh nghiệm</p>
               </div>
             </li>
 
@@ -62,7 +62,7 @@ $countryList = Country::list_country();
               </div>
               <div style="flex-grow: 1">
                 <p class="hero_stat-number">29</p>
-                <p class="hero_stat-desc">Awards Gained</p>
+                <p class="hero_stat-desc">Giải thưởng</p>
               </div>
             </li>
 
@@ -72,7 +72,7 @@ $countryList = Country::list_country();
               </div>
               <div style="flex-grow: 1">
                 <p class="hero_stat-number">725+</p>
-                <p class="hero_stat-desc">Property Build</p>
+                <p class="hero_stat-desc">Khu du lịch</p>
               </div>
             </li>
           </ul>
@@ -81,22 +81,22 @@ $countryList = Country::list_country();
       <div class="search-bar">
         <div class="search-bar__wrapper">
           <div class="search-bar__item">
-            <h3 class="search-bar__title">Location</h3>
-            <p class="search-bar__choose">Bali, Indonesia</p>
+            <h3 class="search-bar__title">Địa điểm</h3>
+            <p class="search-bar__choose">Vịnh Hạ Long</p>
           </div>
 
           <div class="search-bar__item">
-            <h3 class="search-bar__title">City</h3>
-            <p class="search-bar__choose">Prambanan</p>
+            <h3 class="search-bar__title">Tỉnh</h3>
+            <p class="search-bar__choose">Quảng Bình</p>
           </div>
 
           <div class="search-bar__item">
-            <h3 class="search-bar__title">Guest</h3>
-            <p class="search-bar__choose">8 Persons</p>
+            <h3 class="search-bar__title">Khách du lịch</h3>
+            <p class="search-bar__choose">8 người</p>
           </div>
 
           <a href="#!" class="btn search-bar__action">
-            <i class="fa-solid fa-magnifying-glass"></i> Search</a>
+            <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</a>
         </div>
       </div>
     </section>
@@ -105,14 +105,12 @@ $countryList = Country::list_country();
     <section class="best-tour">
       <div class="best-tour__row">
         <div>
-          <h2 class="best-tour__title subTitle">Our Best Tour</h2>
+          <h2 class="best-tour__title subTitle">Chuyến đi tốt nhất</h2>
           <p class="best-tour__desc desc">
-            These are also locations where it’s easy to feel healthier, happier
-            and less stressed than in America. And for more destinations on the
-            Global Retirement Index.
+            Những tour du lịch hấp dẫn nhất mà chúng tôi đem lại cho quý khách hàng. Nhằm đem lại trải nghiệm tốt nhất với chi phí hợp lí
           </p>
         </div>
-        <a href="#!" class="btn best-tour__action">See all tours</a>
+        <a href="#!" class="btn best-tour__action">Xem tất cả</a>
       </div>
 
       <!-- BEST TOUR LIST -->
@@ -154,14 +152,13 @@ $countryList = Country::list_country();
     <section class="choose">
       <div class="choose__wrapper">
         <div class="choose__decoration">
-          <img src="https://images.unsplash.com/photo-1522010675502-c7b3888985f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG91cnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="choose__img" />
+          <img src="./assets/images/why-img" alt="" class="choose__img" />
         </div>
 
         <div class="choose__content">
-          <h2 class="choose__title">Why Choose Us?</h2>
+          <h2 class="choose__title">Ưu điểm của Safe Tour</h2>
           <p class="choose__desc">
-            We make all the process easy. Dummy text ever since the is, when an
-            unknown printer took.
+            Dịch vụ du lịch mang lại nhiều ưu điểm như: giúp bạn khám phá những địa điểm mới lạ, trải nghiệm văn hóa đa dạng, và thư giãn sau những ngày làm việc căng thẳng.
           </p>
           <ul class="choose__list">
             <article class="choose__item">
@@ -169,10 +166,9 @@ $countryList = Country::list_country();
                 <img src="./assets/icon/choose-icon-1.svg" alt="" class="choose__item-icon" />
               </div>
               <div>
-                <h3 class="choose__sub-title">We make all the process easy</h3>
+                <h3 class="choose__sub-title">Mọi thứ trở nên dễ dàng</h3>
                 <p class="choose__sub-desc">
-                  A galley of type and scrambled it to make a type when an
-                  unknown printer took
+                  Các tour du lịch chuyên nghiệp còn cung cấp hướng dẫn viên am hiểu địa phương, đảm bảo an toàn
                 </p>
               </div>
             </article>
@@ -182,10 +178,9 @@ $countryList = Country::list_country();
                 <img src="./assets/icon/choose-icon-2.svg" alt="" class="choose__item-icon" />
               </div>
               <div>
-                <h3 class="choose__sub-title">Private & Customized Tours</h3>
+                <h3 class="choose__sub-title">Riêng tư - Du lịch thỏa thích</h3>
                 <p class="choose__sub-desc">
-                  A galley of type and scrambled it to make a type when an
-                  unknown printer took
+                  Tiện nghi và tối ưu hóa chi phí. Ngoài ra, bạn còn có cơ hội gặp gỡ, kết bạn và tạo nên những kỷ niệm đáng nhớ.
                 </p>
               </div>
             </article>
@@ -195,10 +190,9 @@ $countryList = Country::list_country();
                 <img src="./assets/icon/choose-icon-3.svg" alt="" class="choose__item-icon" />
               </div>
               <div>
-                <h3 class="choose__sub-title">Immigration & Passport Help</h3>
+                <h3 class="choose__sub-title">Hỗ trợ khách hàng tốt nhất</h3>
                 <p class="choose__sub-desc">
-                  A galley of type and scrambled it to make a type when an
-                  unknown printer took
+                  Bạn được tận hưởng sự tiện lợi với mọi chi tiết chuyến đi được sắp xếp chu đáo, từ chỗ ở, phương tiện di chuyển đến các hoạt động tham quan
                 </p>
               </div>
             </article>
@@ -211,9 +205,9 @@ $countryList = Country::list_country();
     <section class="trending">
       <div class="trending-row">
         <div>
-          <h2 class="trending__title subTitle">Trending 2024</h2>
+          <h2 class="trending__title subTitle">Tour nổi bật 2024</h2>
           <p class="trending__desc desc">
-            Sost Brilliant reasons Entrada should be your one-stop-shop!
+            Những chuyến đi được nhiều khách hàng ưa thích nhất ❣️
           </p>
         </div>
         <div class="trending__arrows">
@@ -246,7 +240,7 @@ $countryList = Country::list_country();
                                             ?> (VNĐ)</p>
                 <form style="margin-bottom: 0;" method="post" action="./book_tour.php">
                   <input type="hidden" name="tour_id" value="<?php echo $item['tourID'] ?>">
-                  <button class="btn trending__book-action" style="cursor: pointer">Book Now</button>
+                  <button class="btn trending__book-action" style="cursor: pointer">Đặt Tour</button>
                 </form>
               </div>
 
@@ -268,12 +262,12 @@ $countryList = Country::list_country();
     <section class="country">
       <div class="country__row">
         <div>
-          <h2 class="subTitle country__title">Top Destination</h2>
+          <h2 class="subTitle country__title">Điểm đến hàng đầu</h2>
           <p class="desc country__desc">
-            Sost Brilliant reasons Entrada should be your one-stop-shop!
+            Mang lại cho bạn những trải nghiệm tuyệt vời nhất ❣️
           </p>
         </div>
-        <a href="#!" class="btn country__action">See all destination</a>
+        <a href="#!" class="btn country__action">Xem tất cả</a>
       </div>
 
       <ul class="country__list">
@@ -292,15 +286,15 @@ $countryList = Country::list_country();
 
     <!-- TOUR -->
     <section class="tour">
-      <h2 class="subTitle tour__title">Tour Type</h2>
+      <h2 class="subTitle tour__title">Loại hình du lịch</h2>
       <div class="tour__list">
         <div class="tour__item">
           <div class="tour__wrapper-icon">
             <img src="./assets/icon/tour-icon-1.svg" alt="" class="tour__icon" />
           </div>
-          <h3 class="tour__type">City Tours</h3>
+          <h3 class="tour__type">Thành phố</h3>
           <p class="tour__desc">
-            5 Tours- From <span class="tour__price">550$</span>
+            5 tours - chỉ từ <span class="tour__price"><?php echo number_format(5000000, 0, ',', '.') ?>(vnđ)</span>
           </p>
         </div>
 
@@ -308,9 +302,9 @@ $countryList = Country::list_country();
           <div class="tour__wrapper-icon">
             <img src="./assets/icon/tour-icon-2.svg" alt="" class="tour__icon" />
           </div>
-          <h3 class="tour__type">Beaches</h3>
+          <h3 class="tour__type">Biển</h3>
           <p class="tour__desc">
-            10 Tours- From<span class="tour__price">250$ </span>
+            10 tours - chỉ từ <span class="tour__price"><?php echo number_format(2000000, 0, ',', '.') ?>(vnđ)</span>
           </p>
         </div>
 
@@ -318,9 +312,9 @@ $countryList = Country::list_country();
           <div class="tour__wrapper-icon">
             <img src="./assets/icon/tour-icon-3.svg" alt="" class="tour__icon" />
           </div>
-          <h3 class="tour__type">Museum Tours</h3>
+          <h3 class="tour__type">Bảo tàng</h3>
           <p class="tour__desc">
-            5 Tours- From <span class="tour__price"> 399$</span>
+            7 tours - chỉ từ <span class="tour__price"><?php echo number_format(2500000, 0, ',', '.') ?>(vnđ)</span>
           </p>
         </div>
 
@@ -328,9 +322,9 @@ $countryList = Country::list_country();
           <div class="tour__wrapper-icon">
             <img src="./assets/icon/tour-icon-4.svg" alt="" class="tour__icon" />
           </div>
-          <h3 class="tour__type">Cruises</h3>
+          <h3 class="tour__type">Du thuyền</h3>
           <p class="tour__desc">
-            8 Tours- From <span class="tour__price">850$</span>
+            3 tours - chỉ từ <span class="tour__price"><?php echo number_format(8500000, 0, ',', '.') ?>(vnđ)</span>
           </p>
         </div>
       </div>
@@ -343,12 +337,10 @@ $countryList = Country::list_country();
           <img src="./assets/images/comment-img.png" alt="" class="comment__img" />
         </div>
         <section class="comment__content">
-          <h3 class="comment__title subTitle">What our user say</h3>
+          <h3 class="comment__title subTitle">Đánh giá khách hàng</h3>
           <div class="comment__quotes">
             <p class="comment__say">
-              “Adding live social proof was the #1 driver of increased revenue
-              in all my experiments while at Airkey.” and the bran must survive
-              atleast 1 year.
+              "Dịch vụ du lịch của công ty thật tuyệt vời! Từ khâu lên kế hoạch cho đến lúc trở về, mọi thứ đều được sắp xếp chu đáo và chuyên nghiệp. Hướng dẫn viên rất nhiệt tình, am hiểu địa phương và luôn sẵn sàng hỗ trợ chúng tôi. Chúng tôi đã có cơ hội khám phá những địa điểm tuyệt đẹp và trải nghiệm văn hóa độc đáo.
             </p>
             <div class="comment__actor">
               <div class="actor__wrapper-avatar">
@@ -356,8 +348,8 @@ $countryList = Country::list_country();
               </div>
 
               <div style="flex: 1 0">
-                <h4 class="actor__name">Raul van Sutoyo</h4>
-                <p class="actor__job">UI Designer</p>
+                <h4 class="actor__name">Nguyễn Ngọc Linh</h4>
+                <p class="actor__job" style="margin-top: 7px;">Khách hàng thân thiết</p>
                 <div class="actor__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -374,64 +366,62 @@ $countryList = Country::list_country();
 
     <!-- GUIDES -->
     <section class="guide">
-      <h2 class="subTitle guide__title">Articles & Travel Guidings</h2>
+      <h2 class="subTitle guide__title">
+        Bài viết & Hướng dẫn du lịch</h2>
       <p class="desc guide__desc">
-        Travel has helped us to understand the meaning of life and it has helped
-        us become better people. Each time we travel, we see the world with new
-        eyes.
+        Du lịch đã giúp chúng ta hiểu được ý nghĩa của cuộc sống và nó đã giúp chúng ta trở thành những người tốt hơn. Mỗi lần đi du lịch, chúng ta nhìn thế giới bằng con mắt mới.
       </p>
 
       <section class="guide__content">
         <div class="guide__wrapper">
           <section class="guide__main-content">
-            <img src="https://images.unsplash.com/photo-1714052326919-de54dbc2ada4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8" alt="" class="guide__main-img" />
+            <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRyYXZlbGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="" class="guide__main-img" />
             <div class="guide__main-row">
               <h3 class="guide__subTitle">
-                The real voyage does not consist in seeking new
+                Cuộc hành trình thực sự không bao gồm việc tìm kiếm cái mới
               </h3>
-              <span class="guide__date">Jun 1, 2021</span>
+              <span class="guide__date">Jun 1, 2024</span>
             </div>
             <p class="guide__subDesc">
-              Excited him now natural saw passage offices you minuter. At by
-              asked being court hopes.
+              Mọi chi tiết đều được chăm chút kỹ lưỡng, từ chỗ ở, phương tiện di chuyển đến các hoạt động tham quan. Hướng dẫn viên không chỉ am hiểu mà còn rất tận tâm, giúp tôi cảm nhận được văn hóa và con người địa phương một cách chân thực nhất
             </p>
           </section>
           <ul class="guide__sub-list">
             <li class="guide__item">
-              <img src="https://plus.unsplash.com/premium_photo-1713962962200-e33e90cb2c60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="" class="guide__thumb" />
+              <img src="https://plus.unsplash.com/premium_photo-1687653079484-12a596ddf7a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJhdmVsaW5nfGVufDB8fDB8fHww" alt="" class="guide__thumb" />
               <div>
                 <h3 class="guide__subTitle" style="font-size: 2rem; margin-bottom: 12px; max-width: 255px">
-                  Mountains is always right destination.
+                  Những lưu ý khi đi du lịch
                 </h3>
                 <p class="guide__subDesc" style="font-size: 1.4rem; max-width: 255px">
-                  Farther so friends am to detract forbade
+                  Bài viết đem lại những lưu ý quan trọng khi bạn đi du lịch
                 </p>
-                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2021</span>
+                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2024</span>
               </div>
             </li>
             <li class="guide__item">
-              <img src="https://plus.unsplash.com/premium_photo-1713962962200-e33e90cb2c60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="" class="guide__thumb" />
+              <img src="https://images.unsplash.com/photo-1583452924150-c86772c4fab6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsaW5nfGVufDB8fDB8fHww" alt="" class="guide__thumb" />
               <div>
                 <h3 class="guide__subTitle" style="font-size: 2rem; margin-bottom: 12px; max-width: 255px">
-                  Mountains is always right destination.
+                  Biển và núi đem lại cho ta cảm giác thật thoải mái
                 </h3>
                 <p class="guide__subDesc" style="font-size: 1.4rem; max-width: 255px">
-                  Farther so friends am to detract forbade
+                  Những lợi ích khi bạn đi du lịch biển và núi
                 </p>
-                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2021</span>
+                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2024</span>
               </div>
             </li>
 
             <li class="guide__item">
-              <img src="https://plus.unsplash.com/premium_photo-1713962962200-e33e90cb2c60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D" alt="" class="guide__thumb" />
+              <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsaW5nfGVufDB8fDB8fHww" alt="" class="guide__thumb" />
               <div>
                 <h3 class="guide__subTitle" style="font-size: 2rem; margin-bottom: 12px; max-width: 255px">
-                  Mountains is always right destination.
+                  Những lợi ích khi bạn đi du lịch
                 </h3>
                 <p class="guide__subDesc" style="font-size: 1.4rem; max-width: 255px">
-                  Farther so friends am to detract forbade
+                  Du lịch khiến ta mang lại cảm giác thoải mái
                 </p>
-                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2021</span>
+                <span class="guide__date" style="margin-top: 52px; display: inline-block">Jun 1, 2024</span>
               </div>
             </li>
           </ul>
@@ -442,12 +432,12 @@ $countryList = Country::list_country();
     <!-- SUBSCRIBE -->
     <section class="subscribe">
       <div class="subscribe__wrapper">
-        <h3 class="subscribe__title">Subscribe our newsletter</h3>
+        <h3 class="subscribe__title">Đăng ký bản tin của chúng tôi</h3>
         <p class="subscribe__desc">
-          Reciev latest news, update, and many other things every week.
+          Nhận tin tức, cập nhật mới nhất và nhiều thứ khác mỗi tuần.
         </p>
         <form class="subscribe__form">
-          <input class="subscribe__email" type="email" name="user-email" id="email" placeholder="Enter Your email address" />
+          <input class="subscribe__email" type="email" name="user-email" id="email" placeholder="Nhập email của bạn" />
           <button type="submit" class="subscribe__submit">
             <i class="fa-solid fa-paper-plane"></i>
           </button>

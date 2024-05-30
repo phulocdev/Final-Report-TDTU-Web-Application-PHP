@@ -23,12 +23,12 @@
           </div>
           <div>
             <i class="fa-solid fa-phone"></i>
-            (+88) 017 000 00000
+            0988886666
           </div>
 
           <div>
             <i class="fa-solid fa-location-dot"></i>
-            Info@example.com
+            19 Nguyễn Hữu Thọ, Quận 7, TP.Hồ Chí Minh
           </div>
         </div>
         <form action="" class="contact__form">

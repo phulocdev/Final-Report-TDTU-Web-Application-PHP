@@ -4,7 +4,7 @@
 
 <body>
   <div class="blog-hero">
-    <h1 class="blog__heading">Welcome to our Travel Blog</h1>
+    <h1 class="blog__heading">Travel Blog</h1>
   </div>
 
   <main>
@@ -14,7 +14,7 @@
           <div class="blog__single">
             <img src="https://images.unsplash.com/photo-1716547286288-df00f829a799?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__single__thumb" />
             <h2 class="blog__single__heading subTitle">
-              Exploring Argentina and Chile by Bus
+              7 Điểm Đến Thú Vị Nhất Ở Châu Á Bạn Không Thể Bỏ Lỡ
             </h2>
           </div>
 
@@ -31,26 +31,26 @@
                   font-weight: 600;
                   line-height: 1.33em; /* 133.333% */
                 ">
-              Recent Blog
+              Bài viết vừa xem
             </p>
 
             <div class="blog__search-list">
               <div class="blog__search-item">
                 <img src="https://images.unsplash.com/photo-1716547286288-df00f829a799?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__search-thumb" />
                 <h3 class="blog__search-name">
-                  7 Tips For Nomads On A Budget Trips
+                  Khám Phá Văn Hóa Độc Đáo
                 </h3>
               </div>
               <div class="blog__search-item">
                 <img src="https://images.unsplash.com/photo-1716547286288-df00f829a799?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__search-thumb" />
                 <h3 class="blog__search-name">
-                  7 Tips For Nomads On A Budget Trips
+                  Chinh Phục Đỉnh Cao
                 </h3>
               </div>
               <div class="blog__search-item">
                 <img src="https://images.unsplash.com/photo-1716547286288-df00f829a799?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__search-thumb" />
                 <h3 class="blog__search-name">
-                  7 Tips For Nomads On A Budget Trips
+                  Trải Nghiệm Văn Hóa Ẩm Thực
                 </h3>
               </div>
             </div>
@@ -62,44 +62,35 @@
           <div class="blog__item">
             <img src="https://images.unsplash.com/photo-1716718405779-79c152f0f831?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__thumb" />
             <h3 class="blog__item-heading subTitle">
-              On the Shores of a Pink Lake in Australia
+              Du Lịch Mạo Hiểm: Khám Phá Những Vùng Đất Hoang Dã Nhất Thế Giới
             </h3>
             <p class="blog__item-desc">
-              Meh synth Schlitz, tempor duis single-origin coffee ea next
-              level ethnic fingerstache fanny pack nostrud. Photo booth anim
-              8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse
-              nihil...
+              Đối mặt với thách thức và khám phá những vùng đất hoang dã hùng vĩ nhất thế giới, từ sa mạc nóng bỏng đến rừng nhiệt đới sâu thẳm.
             </p>
 
-            <a href="#!" class="blog__item-more">Read more</a>
+            <a href="#!" class="blog__item-more">Xem thêm</a>
           </div>
           <div class="blog__item">
             <img src="https://images.unsplash.com/photo-1716718405779-79c152f0f831?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__thumb" />
             <h3 class="blog__item-heading subTitle">
-              On the Shores of a Pink Lake in Australia
+              Hòa Mình Trong Thiên Nhiên: 7 Địa Điểm Cắm Trại Lý Tưởng
             </h3>
             <p class="blog__item-desc">
-              Meh synth Schlitz, tempor duis single-origin coffee ea next
-              level ethnic fingerstache fanny pack nostrud. Photo booth anim
-              8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse
-              nihil...
+              Lấy lại cân bằng bản thân và tận hưởng sự yên bình của thiên nhiên với danh sách 7 địa điểm cắm trại lý tưởng trên khắp thế giới.
             </p>
 
-            <a href="#!" class="blog__item-more">Read more</a>
+            <a href="#!" class="blog__item-more">Xem thêm</a>
           </div>
           <div class="blog__item">
             <img src="https://images.unsplash.com/photo-1716718405779-79c152f0f831?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="" class="blog__thumb" />
             <h3 class="blog__item-heading subTitle">
-              On the Shores of a Pink Lake in Australia
+              Bí Mật Đằng Sau Những Điểm Đến Du Lịch Phổ Biến Trên Thế Giới
             </h3>
             <p class="blog__item-desc">
-              Meh synth Schlitz, tempor duis single-origin coffee ea next
-              level ethnic fingerstache fanny pack nostrud. Photo booth anim
-              8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse
-              nihil...
+              Khám phá những bí mật, câu chuyện lịch sử và những điều thú vị đằng sau những điểm đến du lịch nổi tiếng trên thế giới, từ Đông sang Tây
             </p>
 
-            <a href="#!" class="blog__item-more">Read more</a>
+            <a href="#!" class="blog__item-more">Xem thêm</a>
           </div>
         </div>
 

@@ -13,19 +13,18 @@
       <div class="operator">
         <div class="operator__wrapper">
           <div>
-            <span class="operator__sub-desc">Who we are</span>
-            <h2 class="operator__heading">We are best tourist operator</h2>
+            <span class="operator__sub-desc">Chúng tôi là ai</span>
+            <h2 class="operator__heading">
+              Chúng tôi là nhà điều hành du lịch tốt nhất</h2>
             <p class="operator__desc desc">
-              We are a small family owned, award-winning operation that
-              specializes in providing highly personalized service to our
-              discerning clientele. Our goal is to exceed your expectations
-              and make your trip an unforgettable experience.
+
+              Chúng tôi là một doanh nghiệp nhỏ sở hữu gia đình, đã đạt được nhiều giải thưởng, chuyên cung cấp dịch vụ cá nhân hóa cao cấp cho khách hàng tinh tế của chúng tôi. Mục tiêu của chúng tôi là vượt qua mong đợi của bạn và biến chuyến đi của bạn trở thành một trải nghiệm khó quên.
             </p>
           </div>
           <div>
             <div class="operator__media">
               <div class="operator__wrapper-img">
-                <img src="https://images.unsplash.com/photo-1716305218943-7b14795ee33e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" class="operator__img" />
+                <img src="https://plus.unsplash.com/premium_photo-1661456049395-0eae5614858d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3VpZGUlMjB0b3VyaXN0fGVufDB8fDB8fHww" alt="" class="operator__img" />
               </div>
             </div>
           </div>
@@ -34,12 +33,12 @@
 
       <!-- Tour guides -->
       <div class="tour">
-        <h2 class="subTitle tour__heading">Meet our tour guides</h2>
+        <h2 class="subTitle tour__heading">Gặp gỡ các hướng dẫn viên du lịch</h2>
         <div class="tour__list">
           <div class="tour__item">
-            <img src="https://images.unsplash.com/photo-1716305218943-7b14795ee33e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" class="tour__thumb" />
+            <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fHww" alt="" class="tour__thumb" />
             <div class="tour_row">
-              <h3 class="tour__name">Hasan Ahmed</h3>
+              <h3 class="tour__name">Nguyễn Quang Lâm</h3>
               <div class="tour__socials">
                 <div class="tour__social">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -52,12 +51,12 @@
                 </div>
               </div>
             </div>
-            <p class="tour__desc">Adventure master</p>
+            <p class="tour__desc">Hướng dẫn viên nổi bật</p>
           </div>
           <div class="tour__item">
-            <img src="https://images.unsplash.com/photo-1716305218943-7b14795ee33e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" class="tour__thumb" />
+            <img src="https://plus.unsplash.com/premium_photo-1690086519096-0594592709d3?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="tour__thumb" />
             <div class="tour_row">
-              <h3 class="tour__name">Hasan Ahmed</h3>
+              <h3 class="tour__name">Trần Ngọc Lan</h3>
               <div class="tour__socials">
                 <div class="tour__social">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -70,12 +69,12 @@
                 </div>
               </div>
             </div>
-            <p class="tour__desc">Adventure master</p>
+            <p class="tour__desc">Hướng dẫn viên nổi bật</p>
           </div>
           <div class="tour__item">
-            <img src="https://images.unsplash.com/photo-1716305218943-7b14795ee33e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="" class="tour__thumb" />
+            <img src="https://images.unsplash.com/photo-1615109398623-88346a601842?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="tour__thumb" />
             <div class="tour_row">
-              <h3 class="tour__name">Hasan Ahmed</h3>
+              <h3 class="tour__name">Trần Quang Hùng</h3>
               <div class="tour__socials">
                 <div class="tour__social">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -88,7 +87,7 @@
                 </div>
               </div>
             </div>
-            <p class="tour__desc">Adventure master</p>
+            <p class="tour__desc">Hướng dẫn viên nổi bật</p>
           </div>
         </div>
       </div>

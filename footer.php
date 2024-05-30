@@ -3,67 +3,67 @@
        <div class="container">
            <div class="footer__wrapper">
                <div class="footer__col">
-                   <h3 class="footer__sub-title">Resources</h3>
+                   <h3 class="footer__sub-title">Tài nguyên</h3>
                    <ul class="footer__sub-list">
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Download</a>
+                           <a class="footer__link" href="#!">Tải xuống</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Help Center</a>
+                           <a class="footer__link" href="#!">Hỗ trợ</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Guide Book</a>
+                           <a class="footer__link" href="#!">Sách hướng dẫn</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">App Directory</a>
+                           <a class="footer__link" href="#!">App chỉ đường</a>
                        </li>
                    </ul>
                </div>
 
                <div class="footer__col">
-                   <h3 class="footer__sub-title">Travellers</h3>
+                   <h3 class="footer__sub-title">Khách hàng</h3>
                    <ul class="footer__sub-list">
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Why Travellers</a>
+                           <a class="footer__link" href="#!">Cá nhân</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Enterprice</a>
+                           <a class="footer__link" href="#!">Doanh nghiệp</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Customer Stories</a>
+                           <a class="footer__link" href="#!">Câu chuyện</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Instagram post</a>
+                           <a class="footer__link" href="#!">Bài viết</a>
                        </li>
                    </ul>
                </div>
 
                <div class="footer__col">
-                   <h3 class="footer__sub-title">Company</h3>
+                   <h3 class="footer__sub-title">Công ty</h3>
                    <ul class="footer__sub-list">
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Travelling</a>
+                           <a class="footer__link" href="#!">Trụ sở</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">About Locato</a>
+                           <a class="footer__link" href="#!">Định vị</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Success</a>
+                           <a class="footer__link" href="#!">Thành tựu</a>
                        </li>
                        <li class="footer__item">
-                           <a class="footer__link" href="#!">Information</a>
+                           <a class="footer__link" href="#!">Thông tin</a>
                        </li>
                    </ul>
                </div>
 
                <div class="footer__col">
-                   <h3 class="footer__sub-title">Get in Touch</h3>
+                   <h3 class="footer__sub-title">Liên hệ</h3>
                    <p class="footer__col-desc">
-                       Feel free to get in touch with us vai email
+                       Vui lòng liên hệ với chúng tôi qua email
                    </p>
                    <div>
                        <h3 style="margin-top: 24px" class="footer__sub-title">
-                           Contact with me
+                           Liên hệ với chúng tôi
                        </h3>
                        <div class="footer__email-contact">
                            <a href="mailto:52200103@student.tdtu.edu.vn">52200103@student.tdtu.edu.vn</a>

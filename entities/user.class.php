@@ -47,4 +47,12 @@ class User
         $result = $db->select_to_array($sql);
         return $result;
     }
+
+    public static function delete($email)
+    {
+        $db = new Db();
+        $sql = "DELETE FROM user WHERE Email='$email'";
+        $result = $db->query_execute($sql);
+        return $result;
+    }
 }

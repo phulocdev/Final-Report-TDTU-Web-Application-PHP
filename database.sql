@@ -70,6 +70,20 @@ create table chitietbooktour
     payType tinyint NOT NULL -- 0 is tt truc tiep va 1 is chuyen khoan 
 );
 
+create table baiviet
+(
+	blogID INT auto_increment PRIMARY KEY,
+    tieuDe1 varchar(40) NOT NULL,
+    tieuDe2 varchar(40) NOT NULL,
+    tieuDe3 varchar(40) NOT NULL,
+    moTa1 varchar(300) NOT NULL,
+	moTa2 varchar(300) NOT NULL,
+	moTa3 varchar(300) NOT NULL,
+    image1 varchar(300) NOT NULL,
+    image2 varchar(300) NOT NULL
+)
+
+
 ALTER TABLE chitietbooktour ADD CONSTRAINT fk_ctbk_customer
 foreign key (customerID) REFERENCES customer(customerID);
 
@@ -91,9 +105,7 @@ ALTER TABLE destination
 ADD CONSTRAINT fk_destination_area
 FOREIGN KEY (maKhuVuc) REFERENCES area(maKhuVuc);
 
-
-
-
+	
 -- --------------------------------------------------------------------------------------------
 SET SQL_SAFE_UPDATES = 0;
 
@@ -113,6 +125,9 @@ MODIFY COLUMN maKhuVuc varchar(20) NOT NULL;
 
 select * from country;
 select * from area;
+
+select * from customer
+select * from chitietbooktour
 
 select * from destination
 select * from country
