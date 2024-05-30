@@ -152,7 +152,7 @@ $countryList = Country::list_country();
     <section class="choose">
       <div class="choose__wrapper">
         <div class="choose__decoration">
-          <img src="./assets/images/why-img" alt="" class="choose__img" />
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="" class="choose__img" />
         </div>
 
         <div class="choose__content">

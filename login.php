@@ -36,6 +36,7 @@ if (isset($_POST['btn-signup'])) {
   } else {
     // Đăng nhập thành công, lưu Giới thiệu người dùng vào session và chuyển hướng đến trang phù hợp
     $_SESSION['user'] = $u_email;
+    $userArr = User::getAccount($u_email);
     $userRole = $userArr[0]['role'];
     $redirectUrl = ($userRole == 1) ? './admin_country.php' : './index.php';
     header("Location: $redirectUrl");

@@ -13,7 +13,7 @@ $userList = User::list_user();
 
 <main>
     <div class="admin_page">
-        <h1 class="admin__heading">TRANG ADMIN - QUẢN LÝ TOUR DU LỊCH</h1>
+        <h1 class="admin__heading">TRANG ADMIN - QUẢN LÝ TÀI KHOẢN NGƯỜI DÙNG</h1>
 
         <div style="text-align: center; margin-top: 30px">
             <form method="post" action="./add_update_destination.php" class="custom-form">

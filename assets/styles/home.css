@@ -919,6 +919,9 @@
     font-size: 4.5rem;
     text-align: center;
   }
+  .hero__wrapper-img {
+    display: none;
+  }
   .hero__desc {
     font-size: 1.6rem;
     text-align: center;
