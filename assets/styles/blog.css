@@ -134,3 +134,32 @@
   font-weight: 500;
   line-height: 1.5em; /* 150% */
 }
+
+@media screen and (max-width: 575.78px) {
+  .blog__heading {
+    font-size: 4rem;
+  }
+  .blog__single {
+    display: none;
+  }
+  .blog__row {
+    flex-direction: column;
+  }
+  .blog__single__thumb {
+    width: 100%;
+    height: 300px;
+  }
+  .blog__list {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+  }
+  .blog__thumb {
+    width: 100%;
+  }
+  .blog__item-heading {
+    font-size: 2.2rem !important;
+  }
+  .blog__content {
+    padding-bottom: 20px;
+  }
+}

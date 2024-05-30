@@ -233,11 +233,14 @@ $countryList = Country::list_country();
               <p class="trending__desc"><?php echo $item['soDiemDen'] ?> Địa điểm | <?php echo $item['soCho'] ?> Hoạt động</p>
 
               <div class="trending__book">
-                <p class="trending__price"><?php
-                                            $price = $item['price'];
-                                            $formatted_price = number_format($price, 0, ',', '.');
-                                            echo $formatted_price;
-                                            ?> (VNĐ)</p>
+                <p class="trending__price">
+                  <?php
+                  $price = $item['price'];
+                  $formatted_price = number_format($price, 0, ',', '.');
+                  echo $formatted_price;
+                  ?>
+                  (VNĐ)
+                </p>
                 <form style="margin-bottom: 0;" method="post" action="./book_tour.php">
                   <input type="hidden" name="tour_id" value="<?php echo $item['tourID'] ?>">
                   <button class="btn trending__book-action" style="cursor: pointer">Đặt Tour</button>

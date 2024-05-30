@@ -36,7 +36,7 @@
 }
 
 .desti__thumb {
-  width: 270px;
+  width: 100%;
   height: 180px;
   border-radius: 8px;
   object-fit: cover;
@@ -90,4 +90,23 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 30px;
+}
+
+@media screen and (max-width: 575.78px) {
+  .desti-hero div {
+    text-align: center;
+  }
+  .desti__heading {
+    font-size: 4.2rem;
+  }
+  .desti__desc {
+    font-size: 1.6rem;
+  }
+  .tour_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .desti__list {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }

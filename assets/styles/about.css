@@ -112,3 +112,39 @@
   font-weight: 400;
   line-height: 1.42em; /* 142.857% */
 }
+
+@media screen and (max-width: 575.78px) {
+  .about__heading {
+    font-size: 5rem;
+  }
+
+  .operator__wrapper {
+    flex-direction: column;
+  }
+
+  .operator__heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .operator__sub-desc {
+    font-size: 2rem;
+  }
+
+  .operator__wrapper div:first-child {
+    text-align: center;
+  }
+
+  .tour__list {
+    grid-template-columns: 1fr;
+  }
+
+  .operator__wrapper-img {
+    width: 100%;
+  }
+
+  .tour {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

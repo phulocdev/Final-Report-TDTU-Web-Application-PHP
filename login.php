@@ -16,10 +16,15 @@ if (isset($_POST['btn-signup'])) {
   $u_password = $_POST['txtPassword'];
 
   // Kiểm tra xem tài khoản đã tồn tại chưa
-  $userArr = User::getAccount($u_email);
-  if (empty($userArr)) {
-    // Tài khoản không tồn tại, chuyển hướng về trang đăng nhập
-    header("Location: login.php");
+
+  if (User::getAccount($u_email) == null) {
+?>
+    <!-- Tài khoản không tồn tại, chuyển hướng về trang đăng nhập -->
+    <script>
+      alert('Tài khoản không tồn tại. Vui lòng đăng ký');
+      window.location = './login.php';
+    </script>";
+<?php
     exit;
   }
 
@@ -46,7 +51,7 @@ if (isset($_POST['btn-signup'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>=Đăng nhập</title>
+  <title> Đăng nhập</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <!-- Favicon -->

@@ -84,3 +84,41 @@
   text-decoration: underline;
   color: #31c3e0;
 }
+
+@media screen and (max-width: 575.78px) {
+  .navbar__list,
+  .navbar__sign-up,
+  .hero__wrapper-img,
+  .hero__card-icon,
+  .hero__card-count,
+  .hero_card,
+  .hero__stat {
+    display: none;
+  }
+
+  .navbar-contact__btn {
+    width: 100px;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    min-width: 100px;
+    height: 54px;
+  }
+
+  .navbar__logo {
+    width: 140px;
+    height: 28px;
+  }
+  .btn {
+    width: 140px;
+    min-width: 80px;
+    height: 54px;
+    padding: 0 9px;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subTitle {
+    font-size: 3.2rem !important;
+  }
+}

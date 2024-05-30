@@ -31,6 +31,8 @@ if (isset($_GET['area'])) {
   </div>
   <main>
     <div class="container">
+      <h1 class="subTitle" style="text-align: center; text-transform: capitalize; margin-top: 40px;">Danh sách địa điểm</h1>
+
       <div class="tour_wrapper">
         <!-- Filter bar -->
         <asdie class="filter-bar">
